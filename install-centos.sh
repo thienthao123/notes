@@ -1,7 +1,7 @@
 curl -sL https://rpm.nodesource.com/setup_10.x | sudo bash -
 echo "[MongoDB]
 name=MongoDB Repository
-baseurl=http://repo.mongodb.org/yum/redhat/$releasever/mongodb-org/4.2/$basearch/
+baseurl=http://repo.mongodb.org/yum/redhat/\$releasever/mongodb-org/4.2/\$basearch/
 gpgcheck=1
 enabled=1
 gpgkey=https://www.mongodb.org/static/pgp/server-4.2.asc" > /etc/yum.repos.d/mongodb.repo
